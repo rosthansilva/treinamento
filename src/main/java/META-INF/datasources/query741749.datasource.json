@@ -1,0 +1,138 @@
+{
+  "customId": "outputLogedUserId",
+  "queryName": "output - Consulta responsável por capturar ID do usuário",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "OUTPUT",
+  "entityFullName": "app.entity.OUTPUT",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "OUTPUT",
+        "alias": "o",
+        "namespace": "app.entity.OUTPUT"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "o"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": [
+      "Administrators"
+    ],
+    "DELETE": true,
+    "DELETEAuthorities": [
+      "Administrators"
+    ],
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "user": {
+      "type": "server",
+      "blocklyMethod": "getLogedUserId",
+      "blocklyClass": "blockly.UserControl",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.UserControl",
+        "sourcePath": "src/main/java/blockly/UserControl.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "signUp",
+            "hasReturn": "true",
+            "params": [
+              "username",
+              "email",
+              "password"
+            ]
+          },
+          {
+            "name": "resetPassword",
+            "hasReturn": "true",
+            "params": [
+              "email",
+              "isMobile"
+            ]
+          },
+          {
+            "name": "getLogedUserId",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "prODUCT": null,
+    "date": null,
+    "quantity": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "user": null,
+    "prODUCT": null,
+    "date": null,
+    "quantity": null
+  },
+  "security": {
+    "id": null,
+    "user": null,
+    "prODUCT": null,
+    "date": null,
+    "quantity": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query741749/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
